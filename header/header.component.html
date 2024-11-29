@@ -1,0 +1,46 @@
+<header class="bg-indigo-600 text-white py-4 shadow-md">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <h1 class="text-2xl font-semibold">Products App</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li *ngIf="user">
+          <a
+            routerLink="/products"
+            class="text-white font-medium hover:text-gray-200"
+            >Products</a
+          >
+        </li>
+        <li *ngIf="user">
+          <a
+            routerLink="/add-product"
+            class="text-white font-medium hover:text-gray-200"
+            >Add Product</a
+          >
+        </li>
+        <li *ngIf="!user">
+          <a
+            routerLink="/login"
+            class="text-white font-medium hover:text-gray-200"
+            >Login</a
+          >
+        </li>
+        <li *ngIf="!user">
+          <a
+            routerLink="/register"
+            class="text-white font-medium hover:text-gray-200"
+            >Register</a
+          >
+        </li>
+        <li *ngIf="user">
+          <button
+            routerLink="/login"
+            (click)="logout()"
+            class="text-red-200 font-medium hover:text-red-300"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
