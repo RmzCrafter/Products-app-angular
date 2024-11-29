@@ -6,15 +6,6 @@ This is a simple Products App built with Angular, and it integrates with Firebas
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Firebase Configuration](#firebase-configuration)
-- [Features](#features)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Components](#components)
-- [Services](#services)
-- [Guards](#guards)
-- [Routing](#routing)
-- [Styling](#styling)
-- [Contributors](#contributors)
 
 ---
 
